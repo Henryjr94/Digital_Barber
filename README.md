@@ -33,4 +33,6 @@ o site pode ser acessado em "localhost:3000".
 ## Final notes
 LinkedIn: https://www.linkedin.com/in/henry-okamura/
 
+This is my first "big" project using most everything I learned so far, and I'm very happy with the results, although it can and will still be improved upon.
+
 feel free to add me
