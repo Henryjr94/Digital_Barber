@@ -32,4 +32,5 @@ o site pode ser acessado em "localhost:3000".
 
 ## Final notes
 LinkedIn: https://www.linkedin.com/in/henry-okamura/
-feel free to connect to me
+
+feel free to add me
