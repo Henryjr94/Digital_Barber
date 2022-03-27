@@ -1,0 +1,82 @@
+*:focus {
+    outline: none;
+}
+
+:root {
+    --color-1: #000000;
+    --color-2: #52057B;
+    --color-3: #892CDC;
+    --color-4: #e4ccf5;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: unset;
+    user-select: none;
+    color: whitesmoke;
+}
+
+#spacing{
+    height: 20px;
+}
+
+button{
+    background-color: transparent;
+    border: var(--color-1) 3px solid;
+    border-radius: 5px;
+    width: 100px;
+}
+
+button:hover{
+    transition: 1s;
+    border: var(--color-3) 3px solid;
+    box-shadow: 0px 0px 8px var(--color-4);
+}
+
+input{
+    color: var(--color-1);
+    width: 250px;
+}
+
+body{
+    background-color: var(--color-2);
+}
+
+header{
+    background-color: var(--color-1);    
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+header *{
+    font-size: xxx-large;
+}
+
+.header-slot{
+    width: 100%;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+#head-right{
+    display: flex;
+    justify-content: end;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

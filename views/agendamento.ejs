@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Barber</title>
+    <link rel="stylesheet" href="/stylesheets/agendamento.css">
+    <link rel='stylesheet' href='/stylesheets/setup.css' />
+    <link rel='stylesheet' href='/stylesheets/lista.css' />
+
 </head>
 <body>  
 
-    <h1>Agendar horario</h1>
+    <%- include("./partials/header") %>
 
-    <form action="" method="post">
+    <main>
 
-        <input required type="number" name="cliente_id" id="" value="1"> ID do cliente <br> 
-        <input required type="text" name="descricao" id="" > Descricao <br>
-        <input required type="datetime-local" name="horario" id="" > horario <br>
-        <input type="submit" value="Salvar">
-  
-    </form>
-    
-    <a href="/"> home </a>
+        <div id="form-box">
 
-    <div id="lista"></div>
+            <h2>Agendar horario para </h2>
+
+            <div id="id"> <%= nome %> </div>     
+     
+             <form action="" method="post" id="info-box">
+     
+                 <input required type="number" name="cliente_id" id="cliente" value= ><br> 
+                 <input required type="text" name="descricao" id="" placeholder="Descricao">  <br>
+                 <input required type="date" name="horario" id="" placeholder="horario">  <br>
+                 <button type="submit">Enviar</button>    
+           
+             </form>
+     
+        </div>   
+        
+        <div id="spacing"></div>
+         
+         <div class="category-main">
+             <div class="category-child">descricao</div>
+             <div class="category-child">nome</div>
+             <div class="category-child">data</div>
+         </div>
+     
+         <div id="lista"></div>
+
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/javascripts/listaAgendamento.js"></script>
+    <script src="/javascripts/agendamento.js"></script>
 
 </body>
 </html>

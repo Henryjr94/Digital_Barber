@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Barber</title>
+    <link rel='stylesheet' href='/stylesheets/setup.css'>
+    <link rel='stylesheet' href='/stylesheets/cadastro.css'>
+
 </head>
 <body>
+
+    <%- include("./partials/header") %>
+
+
+    <main>
+
+        <div id="form-box">
+
+           <h2>Cadastro de clientes</h2>
+
+            <form action="" method="post" id="info-box">
     
-    <h1>Cadastro de clientes</h1>
+                <input required type="text" name="nome" id="" placeholder="Nome"> <br>
+                <input required type="tel" name="telefone" id="" placeholder="Telefone" >  <br>
+                <input type="email" name="email" id="" placeholder="E-mail">  <br>
+                <button type="submit">Enviar</button>
+        
+            </form>
+        
+    
+        </div>
 
-    <form action="" method="post">
+    </main>
 
-        <input type="text" name="nome" id="" required> Nome <br>
-        <input type="number" name="telefone" id="" required> Telefone <br>
-        <input type="email" name="email" id="" > email <br>
-        <input type="submit">
-  
-    </form>
-
-    <a href="/"> home </a>
+    
+   
 
 
 </body>

@@ -5,9 +5,18 @@ const Cliente = require('../models/Cliente')
 let agendamentoControl = {
 
 
+    renderSelect: (req,res) => {
+        let title = "Clientes"
+
+        res.render('agendamentoSelect', {title})
+    },
+
     render: (req,res) => {
         //render page
-        res.render('agendamento')
+        let {nome} = req.query
+        let title = "Clientes"
+
+        res.render('agendamento', {nome, title})
     },
 
     // req.body gets the object sent by the form
@@ -24,7 +33,9 @@ let agendamentoControl = {
     },
 
     success: (req, res) => {
-        res.render('greatSuccess')
+        let title = ""
+
+        res.render('greatSuccess', {title})
     }
 }
 

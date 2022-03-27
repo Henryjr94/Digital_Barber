@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Barber</title>
+    <link rel='stylesheet' href='/stylesheets/setup.css'>    
+    <link rel='stylesheet' href='/stylesheets/index.css'>    
+
   </head>
   <body>
 
-    <a href="/agendamento">Novo Agendamento</a> <br>
-    <a href="/cadastro">Cadastro de clientes</a> <br>
-    <a href="/lista">lista de agendamentos</a> <br>
-    <a href="/listaClientes">lista de clientes</a>
+    <%- include("./partials/header") %>
+
+    <main>
+
+      <a class="menu-select" href="/agendamento/select">Novo Agendamento</a> <br>
+      <a class="menu-select" href="/cadastro">Cadastro de clientes</a> <br>
+      <a class="menu-select" href="/lista">lista de agendamentos</a> <br>
+      <a class="menu-select" href="/listaClientes">lista de clientes</a>
+
+    </main>
+    
+    
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/javascripts/index.js"></script>

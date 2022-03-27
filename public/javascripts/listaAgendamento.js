@@ -1,5 +1,5 @@
 let lista = document.querySelector('#lista')
-var listaHtml = ""
+var listaHtml = ''
 
 function findById (ID, array){
 
@@ -16,12 +16,21 @@ axios.get("http://localhost:3000/listaAgendamentos").then(agenda => {
 
         let clientes = cliente.data        
 
-        agendamento.map((e,i) => listaHtml += `<div id="agenda-${i}">  descricao: ${e.descricao} cliente: ${findById(e.cliente_id, clientes)} horario: ${e.horario}</div>`)
+        agendamento.map((e,i) => {
+            listaHtml +=
+            `<div class="category">
+            <div class="category-child">${e.descricao} </div>
+            <div class="category-child">${findById(e.cliente_id, clientes)} </div>
+            <div class="category-child">${e.horario} </div>
+            </div>`
+        }) 
 
         lista.innerHTML = listaHtml
 
     })    
 })
+
+
 
 
 

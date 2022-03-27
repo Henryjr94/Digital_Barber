@@ -4,8 +4,9 @@ const Cliente = require('../models/Cliente')
 cadastroControl = {
 
     render: (req,res) => {
+        let title = "Cadastro de clientes"
 
-        res.render('cadastro')
+        res.render('cadastro', {title})
     },
 
     saveForm: async (req, res) => {
@@ -19,7 +20,9 @@ cadastroControl = {
 
 
     success: (req, res) => {
-        res.render('greatSuccess')
+        let title = ""
+
+        res.render('greatSuccess', {title})
     }
 
 }

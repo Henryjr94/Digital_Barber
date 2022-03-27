@@ -13,11 +13,11 @@ axios.get("http://localhost:3000/listacliente").then(cliente => {
 
     clientes.map((e,i) => {
         listaHtml += 
-        `<div class="category">
+        `<a href="./?nome=${e.id}"><div class="category">
         <div class="category-child">${e.nome} </div>
         <div class="category-child">${e.telefone} </div>
         <div class="category-child">${e.email} </div>
-        </div>`
+        </div></a>`
     })
 
     lista.innerHTML = listaHtml

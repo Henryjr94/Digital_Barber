@@ -6,11 +6,10 @@ let indexControl = {
 
     getInfo: async (req, res) => {
         // req.query gets info from the url as a object
-        let {descricao, clinte_id, horario} = req.query
+        let title = "Home"
 
-        res.render('index', {descricao})
+        res.render('index', {title})
 
-        database.sync()
     },
 
     // list every entry in json
@@ -30,13 +29,16 @@ let indexControl = {
         res.json(clientes)
     },
 
-
     renderLista: (req, res) => {
-        res.render('lista')
+        let title = "Agendamentos"
+
+        res.render('listaAgendamentos', {title})
     },
 
     renderListaClientes: (req, res) => {
-        res.render('listaClientes')
+        let title = "Lista de Clientes"
+
+        res.render('listaClientes', {title})
     }
 }
 

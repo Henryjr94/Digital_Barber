@@ -1,0 +1,26 @@
+#id{
+    display: none;
+}
+
+#cliente{
+    display: none;
+}
+
+h2{
+    font-size: xx-large;
+}
+
+#form-box{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-items: center;
+    align-items: center;
+}
+
+#info-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
