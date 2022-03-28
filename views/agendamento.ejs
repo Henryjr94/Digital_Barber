@@ -19,14 +19,12 @@
         <div id="form-box">
 
             <h2>Agendar horario para </h2>
-
-            <div id="id"> <%= nome %> </div>     
      
              <form action="" method="post" id="info-box">
      
-                 <input required type="number" name="cliente_id" id="cliente" value= ><br> 
+                 <input required type="number" name="cliente_id" id="cliente" value="<%= nome %>" ><br> 
                  <input required type="text" name="descricao" id="" placeholder="Descricao">  <br>
-                 <input required type="date" name="horario" id="" placeholder="horario">  <br>
+                 <input required type="datetime-local" name="horario" id="" placeholder="horario">  <br>
                  <button type="submit">Enviar</button>    
            
              </form>

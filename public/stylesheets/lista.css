@@ -7,13 +7,13 @@
 
 .category{
     gap: 1px;
-    width: 500px;
+    width: 1000px;
     display: flex;    
 }
 
 .category-main{
     gap: 1px;
-    width: 500px;
+    width: 1000px;
     display: flex;
     background-color: var(--color-3);
     border-top: #000000 solid 1px;
@@ -23,9 +23,10 @@
     display: flex;
     width: 100%;
     border: 2px solid black;
-    /* border-right: 1px solid black;
-    border-bottom: 1px solid black; */
     justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .category-main-child{
@@ -36,7 +37,7 @@
 }
 
 #lista{
-    width: 500px;
+    width: 1000px;
     display: flex;
     flex-direction: column;   
     gap: 1px;

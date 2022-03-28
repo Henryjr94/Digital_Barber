@@ -17,11 +17,13 @@ axios.get("http://localhost:3000/listaAgendamentos").then(agenda => {
         let clientes = cliente.data        
 
         agendamento.map((e,i) => {
+            let horaReg = e.horario.replaceAll("T", " ").slice(0, 10)
+
             listaHtml +=
             `<div class="category">
             <div class="category-child">${e.descricao} </div>
             <div class="category-child">${findById(e.cliente_id, clientes)} </div>
-            <div class="category-child">${e.horario} </div>
+            <div class="category-child">${horaReg} </div>
             </div>`
         }) 
 
@@ -29,8 +31,3 @@ axios.get("http://localhost:3000/listaAgendamentos").then(agenda => {
 
     })    
 })
-
-
-
-
-
